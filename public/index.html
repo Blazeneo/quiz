@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real-Time Quiz</title>
+</head>
+<body>
+  <h1>Real-Time Quiz</h1>
+  <div id="usernameInput">
+    <input type="text" id="username" placeholder="Enter your username">
+    <button id="setUsername">Set Username</button>
+  </div>
+  <div id="lobby" style="display: none;">
+    <h2>Lobby</h2>
+    <button id="createRoom">Create Room</button>
+    <ul id="roomsList"></ul>
+  </div>
+  <div id="game" style="display: none;">
+    <h2>Game</h2>
+    <div id="question"></div>
+    <input type="text" id="answer" placeholder="Your answer">
+    <button id="submitAnswer">Submit Answer</button>
+  </div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/lobby.js"></script>
+  <script src="/game.js"></script>
+</body>
+</html>
